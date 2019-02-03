@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+/*General Styles*/
+
+h1 {
+    text-align: center;
+    font-family: Futura, sans-serif;
+    border-top: 10px;
+    border-bottom: 50px;
+    color: #800000;
+}
+
+p {
+    font-family: Futura, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+h2{
+    font-family: Futura, sans-serif;
+}
+
+
+section {
+    background: gray;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+
+section > h2 {
+    position: relative;
+    float: right;
+    clear: left;
+    margin-top: 0;
+    margin-left: 350px;
+}
+
+#chicken {
+    background: pink;
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    clear: both;
+}
+
+#beef {
+    background: red;
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    clear: both;
+}
+
+#sushi {
+    background: yellow;
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+}
+
+.row {
+    width: 100%;
+}
+
+/*Styles for large screens */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border: 2px solid black;
+        clear: bottom;
+    }
+
+    .col-lg-4 {
+        width: 30%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/*Styles for tablet view*/
+@media (min-width: 768px) and (max-width: 991px){
+
+    .col-md-2 {
+        float: left;
+        border: 2px solid black;
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .col-md-1 {
+        float: left;
+        clear: both;
+        width: 95%;
+        border: 2px solid black;
+        margin-top: 30px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+}
+
+
+/*Styles for mobile view*/
+@media (max-width: 767px){
+    .col-sm-1 {
+        float: left;
+        border: 2px solid black;
+        width: 90%;
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
